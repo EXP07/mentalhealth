@@ -29,9 +29,14 @@ nav .navbuttons {
 }
 
 .navbuttons .contact {
-	border: solid 2px #9DA5FF;
-	background: #9DA5FF;
+	border: solid 3px #9DA5FF;
+	border-radius: 5px;
+	background: #C1C6FF;
+}
 
+.contact:hover {
+	background: #9DA5FF;
+	border-radius: 5px;
 }
 
 nav ul li {
