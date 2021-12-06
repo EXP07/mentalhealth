@@ -16,24 +16,26 @@ nav {
 	align-items: center;
 	background: #FFF9F2;
 	position: fixed;
-
-	
 }
 
 nav .navbuttons {
-	
 	flex: 1;
 	text-align: right;
 	position: relative;
   	display: inline-block;
 }
 
+.navbuttons .contact {
+	border: solid 2px #9DA5FF;
+	background: #9DA5FF;
+
+}
+
 nav ul li {
 	list-style: none;
 	display: inline-block;
 	padding: 8px 12px;
-	position: relative;
-	
+	position: relative;	
 }
 
 nav ul li a{
@@ -45,8 +47,6 @@ nav ul li a{
 
 
 footer {
-	
-
 	position:fixed;
 	bottom:0px;
 	height:130px;
@@ -56,19 +56,15 @@ footer {
 	margin: 0px;
 	padding-top: 50px;
 	padding-left: 80px;
-	
 }
 
 
 footer .fbuttons {
-	
 	float:left;
 	text-align: left;
 	position: relative;
 	padding-right: 80px;
-	color: #000;
-	
-  	
+	color: #000;	
 }
 
 footer ul {
