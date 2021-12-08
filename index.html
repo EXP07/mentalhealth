@@ -9,9 +9,241 @@
 		<!-- Outfit Font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+		<script src="https://kit.fontawesome.com/49fe80168b.js" crossorigin="anonymous"></script>
+
 	</head>
 	
+    <style>
+
+		/* * {
+  			outline: solid 1px rgba(255, 0, 0, 0.61);
+		} */
+		
+		html {
+			scroll-behavior: smooth;
+		}
+
+		/* body {
+			background: #fff9f2;
+		} */
+
+        h1 {
+            font-size: 64px;
+            color: #017C5C;
+        }
+
+		h2 {
+			font-size: 40px;
+			font-weight: 600;
+			margin-bottom: 24px;
+		}
+
+		h3 {
+			margin-top: 12px;
+			font-size: 28px;
+			font-weight: 400;
+			line-height: 150%;
+		}
+
+		h4 {
+			font-size: 24px;
+			font-weight: 600;
+			margin-bottom: 12px;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 150%;
+		}
+		
+		.hero {
+			padding: 150px;
+			/* margin: 150px auto 20px; */
+            text-align: center;
+			position: relative;
+			background-color: #FFF9F2;
+		}
+
+		.viewAll {
+			margin-top: 40px;
+			display: inline-block;
+			font-weight: 500;
+			text-decoration: none;
+			color: #fff;
+			padding: 12px 30px;
+			font-size: 16px;
+			border: none;
+			background-color: #FF6F7F;
+			position: relative;
+			cursor: pointer;
+			transition: 0.5s;
+		}
+
+		.viewReport {
+			margin-top: 40px;
+			display: inline-block;
+			font-weight: 500;
+			text-decoration: none;
+			padding: 12px 30px;
+			font-size: 16px;
+			border: none;
+			background-color: #FFCD02;
+			position: relative;
+			cursor: pointer;
+			transition: 0.5s;
+		}
+
+		.viewRes {
+			margin-top: 40px;
+			display: inline-block;
+			font-weight: 500;
+			text-decoration: none;
+			color: #fff;
+			padding: 12px 30px;
+			font-size: 16px;
+			border: none;
+			background-color: #000;
+			position: relative;
+			cursor: pointer;
+			transition: 0.5s;
+		}
+
+		.highlight1 {
+			background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFCD02 50%);
+		}
+
+		.highlight2 {
+			background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #9DA5FF 50%);
+
+		}
+
+		#hero-left {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 28%;
+		}
+
+		#aboutUsImg {
+			width: 100%;
+			display: block;
+			margin-left: auto;
+    		margin-right: auto;
+		}
+
+		#inBoxImg {
+			width: 100%;
+			height: 100%;
+		}
+
+		#hero-right {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 28%;
+		}
+		.row {
+			display: flex;
+		}	
+
+		.column {
+			flex: 50%;
+		}
+
+		.row2 {
+			display: flex;
+			/* border-radius: 8px; */
+		}
+
+		.columnLeft {
+			flex: 50%;
+			padding: 100px 50px;
+			background-color: #017C5C;
+		}
+		
+		.columnLeft2 {
+			flex: 50%;
+			padding: 100px 50px;
+			background-color: #FF6F7F;
+		}
+
+		.columnRight {
+			flex: 50%;
+		}
+
+
+		.aboutUs,.art{
+			padding: 120px 200px 60px;
+			background-color: #FFF9F2;
+		}
+
+		.allResources, #ourReport {
+			padding: 0px 200px 120px;
+		}
+
+		.allResources {
+			background-color: #FFF9F2;
+		}
+
+		#ourReport, .art {
+			background-color: #fff;
+		}
+
+		.textinBox {
+			color: #fff;
+		}
+
+		.centerText {
+			text-align: center;
+		}
+
+		/* .column1, .column2, .column3 {
+			float: left;
+			box-sizing: border-box;
+			width: 33.33%;
+			padding: 30px;	
+		} */
+
+		.column3 {
+			float: left;
+			width: 33%;
+			padding: 0 30px 0 0 ;
+			box-sizing: border-box;
+		}
+
+		.card1 {
+			padding: 40px;
+			background-color: #9DA5FF;
+		}
+
+		.card2 {
+			padding: 40px;
+			background-color: #FF6F7F;
+		}
+
+		.card3 {
+			padding: 40px;
+			background-color: #FFCD02;
+		}
+
+		.column1 {
+			background-color: #9DA5FF;
+		}
+
+		.row3 {
+			margin: 60px -5px 0 0;
+		}
+
+		/* Clear floats after the columns */
+		.row3:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+    </style>
 	
 	<body>
 		
@@ -34,35 +266,125 @@
 			</nav>		
 		</header>
 		
-		
-		<footer>
-		
-				<div class="fbuttons" style="padding-left: 220px; padding-right: 280px"> 
-					<h2> Mental Health @ Tufts </h2> <br>
-			 		<h3 style="font-weight: 200"> We're here for you :)</h3> 
-			
-				</div>
-			
-				<div class="fbuttons"> 
+        <section class="hero">
+			<img id="hero-left" src="images/left.png" alt="">
+            <h1>Welcome :)</h1>
+			<h3>The all in one stop for <span class="highlight1">mental health</span> <br>resources at <span class="highlight2">Tufts</span></h3>
+			<a href="#ourReport" class="viewAll"><i class="fas fa-arrow-down" style='margin-right:12px' ></i>View All</a>
+			<img id="hero-right" src="images/right.png" alt="">
+        </section>
 
-					<ul>
-						<li class="home"> <a href="index.html" >Home </a></li>
-						<li class="report"><a href="report/report.html">Report </a></li>
-						<li class="installation"> <a href="installation/installation.html">Art Installation</a></li>
-					</ul>
+		<section class="aboutUs">
+			<div class="row">
+				<div class="column">
+					<h2>About Us</h2>
+					<p>Welcome! 
+					<br><br> We’re a group of Tufts students in the 2021 Fall ExCollege course “Design Thinking for Social Change"!
+					<br><br> Throughout the semester, we have conducted research on mental health situation at Tufts, and we created this website
+					to document our work and provide all the resources available!
+					</p>
 				</div>
-
-				<div class="fbuttons"> 
-					<ul>
-						<li class="students"> <a href="resources/resources.html"> For Students</a></li>
-						<li class="professors"> <a href="resources/resources.html"> For Professors</a> </li>
-						<li class="professors"> <a href="resources/resources.html"> Events</a> </li>
-
-					</ul>
+				<div class="column">
+					<img id="aboutUsImg" src="images/About Us.png" alt="">
 				</div>
+			  </div>
+		</section>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFF9F2" fill-opacity="1" d="M0,128L80,117.3C160,107,320,85,480,101.3C640,117,800,171,960,176C1120,181,1280,139,1360,117.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+	
+		<section id="ourReport">
+			<h2>Report</h2>
+			<div class="row2">
+				<div class="columnLeft">
+					<p class="textinBox">We spent the semester conducting research and trying to dig up the root issues regarding mental health at Tufts. 
+					   <br><br> Here, you can view our interactive report to learn about our discoveries and how to apply them to your college life at Tufts</p>
+					   <button class="viewReport"><i class="fas fa-arrow-right" style='margin-right:12px' ></i>View Report</button>
+
+				</div>
+				<div class="columnRight">
+					<img id="inBoxImg" src="images/report.png" alt="">
+				</div>
+			  </div>
+		</section>
+
+		<section class="art">
+			<h2 class="centerText">Art Installation</h2>
+			<div class="row2">
+				<div class="columnRight">
+					<img id="inBoxImg" src="images/Art Installation.png" alt="">
+				</div>
+				<div class="columnLeft2">
+					<p class="textinBox">
+						The art installation is part of our effort to make an impact on the mental health scene at Tufts. 
+						<br><br> It’ll be installed by <b>December 13th</b> at the <b>Tisch Library</b>. Feel free to check it out if you have time! 
+					</p>
+				</div>
+			  </div>
+		</section>
+
+		<div style="background-color: #FFF9F2;">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L80,117.3C160,107,320,85,480,101.3C640,117,800,171,960,176C1120,181,1280,139,1360,117.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+		<section class="allResources">
+			<h2 class="centerText">Resources</h2>
+			<p class="centerText">We have compiled a list of resources based on our findings and research</p>
+			<div class="row3">
+				<div class="column3">
+					<div class="card1">
+						<i class="fas fa-user-graduate fa-3x" style='margin-bottom: 20px'></i>
+						<h4>For Students</h4>
+						<p>CMHS,  Counselor on Call, Ears for Peers, and more</p>
+						<button class="viewRes"><i class="fas fa-arrow-right" style='margin-right:12px'></i>View More</button>
+					</div>
+				</div>
+				<div class="column3">
+					<div class="card2">
+						<i class="fas fa-chalkboard-teacher fa-3x" style='margin-bottom: 20px'></i>
+						<h4>For Professors</h4>
+						<p>Teaching Resources, Counseling, and more</p>
+						<button class="viewRes"><i class="fas fa-arrow-right" style='margin-right:12px'></i>View More</button>
+					</div>
+				</div>
+				<div class="column3">
+					<div class="card3">
+						<i class="fas fa-calendar-alt fa-3x" style='margin-bottom: 20px'></i>
+						<h4>Events</h4>
+						<p>On-campus activities to help you feel a bit better.</p>
+						<button class="viewRes"><i class="fas fa-arrow-right" style='margin-right:12px'></i>View More</button>
+					</div>
+				</div>
+			  </div>
+
+		</section>
 		
-				
-		</footer>
+
+		<div class = "flex-wrapper">
+			<div class="content"></div>
+		
+					<footer class="footer">
+						<div class="row">
+		
+							<div class="footer-icons">
+								<h2 >Mental Health @ Tufts!</h2>
+								<p>We’re here for you :)</p>
+							</div>
+		
+							<div class="footer-col">
+								<ul>
+									<li class="home"> <a href="index.html" >Home </a></li>
+									<li class="report"><a href="report/report.html">Report </a></li>
+								<li class="installation"> <a href="installation/installation.html">Art Installation</a></li>
+								</ul>
+							</div>
+							<div class="footer-col">
+								<ul>
+									<li class="students"> <a href="resources/resources.html"> For Students</a></li>
+									<li class="professors"> <a href="resources/resources.html"> For Professors</a> </li>
+									<li class="professors"> <a href="resources/resources.html"> Events</a> </li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+		
+		</div>
 
 	</body>
 	
