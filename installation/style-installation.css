@@ -21,7 +21,7 @@ nav {
 	align-items: center;
 	background: #FFF9F2;
 	position: fixed;
-    overflow:hidden;
+    overflow-x: hidden;
 	
 }
 
@@ -38,6 +38,9 @@ nav .navbuttons {
 	border-radius: 5px;
 	background: #C1C6FF;
 }
+
+
+
 
 .contact:hover {
 	background: #9DA5FF;
@@ -58,15 +61,12 @@ nav ul li a{
 	color: #000;
 }
 
-
 body {
     margin: 0px;
     padding: 0px;
     border: 0px;
     
 }
-
-
 
 .header {
   position: relative;
@@ -110,7 +110,7 @@ overflow: hidden;
 
 .content {
     
-  height:100vh;
+  height:100%;
   width: 100%;
   background-color: rgb(255, 255, 255);
 
@@ -233,14 +233,12 @@ overflow: hidden;
 }
 
 .how-it-works-info {
-    text-align: left;
-    font-size: 2.2vh;
-    font-weight: 300;
     flex-wrap: wrap;
     width: 60%;
     margin-left: 10%;
     padding: 40px;
     line-height: 1.5;
+    font-weight: 300;
 }
 .how-it-works-info span {
     color:rgb(45, 50, 118);
@@ -251,37 +249,30 @@ overflow: hidden;
 .how-it-works-title {
     color:rgb(157, 165, 255);
     font-size: 3vh;
+    text-align: left;
     
 }
 
+.how-it-works-paragraph {
+    font-size: 2.2vh;
+    text-align: left;
+
+} 
 
 
 .feelings {
-  text-align: center;
-    font-size: 2.2vh;
-    font-weight: 300;
-    flex-wrap: wrap;
-    width: 60%;
-    margin-left: 10%;
-    padding: 40px;
-    line-height: 1.5;
+    text-align: center;
 }
 
 
 .reach-out {
     text-align: center;
     font-size: 1.8vh;
-    font-weight: 300;
-    flex-wrap: wrap;
-    width: 60%;
-    margin-left: 12.5%;
-    padding: 40px;
-    line-height: 1.5;
     background-color:rgb(157, 165, 255, 0.3);
     margin-bottom: 5%;
+    padding: 40px;
 
 }
-
 
 
 
