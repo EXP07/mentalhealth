@@ -18,21 +18,24 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;800&display=swap" rel="stylesheet">
+        
+
+        <script src="https://kit.fontawesome.com/49fe80168b.js" crossorigin="anonymous"></script>
+        
 
         
 	</head>
 	
     
 	
-	<body>
-		
-		<header>
+	<body>		
+		<!-- <header>
 			<nav>
-				<!-- logo -->
-				<a href="../index.html" style="font-weight: 800; color: #000; text-decoration: none"> Mental Health @ Tufts <!--<img>--> </a>
+	 -->
+				<!-- <a href="../index.html" style="font-weight: 800; color: #000; text-decoration: none"> Mental Health @ Tufts <img> </a> -->
 
-				<!-- navigation bar buttons-->
-				<div class="navbuttons"> 
+	
+				<!-- <div class="navbuttons"> 
 					<ul>
 						<li class="home"><a href="../index.html">Home </a></li>
 						<li class="report"><a href="../report/report.html">Report </a></li>
@@ -40,14 +43,48 @@
 						<li class="resources" style="padding-right: 22px"> <a href="../resources/resources.html"> Resources</a> </li>
 						<li class="contact"> <a href="../contact/contact.html" > Contact Us</a></li>
 					</ul>
-				</div>
-				
+				</div> -->
+<!-- 				
 			</nav>		
-		</header>
+		</header> -->
+
+
+        <section class="header">
+			<!-- navigation bar buttons-->
+			<nav>
+				<a href="index.html" style="font-weight: 800; color: #000; text-decoration: none"> Mental Health @ Tufts <!--<img>--> </a>
+				<div class="nav-links" id="navLinks">
+					<i class="fas fa-times" onclick="hideMenu()"></i>
+					<ul>
+					<li class="home" style="font-weight: 800"><a href="index.html">Home </a></li>
+					<li class="report"><a href="report/report.html">Report </a></li>
+					<li class="installation"> <a href="installation/installation.html">Art Installation</a></li>
+					<li class="resources" style="padding-right: 22px"> <a href="resources/resources.html"> Resources</a> </li>
+					<li class="contact"> <a href="contact/contact.html" > Contact Us</a></li>
+					</ul>
+				</div>
+				<i class="fas fa-bars" onclick="showMenu()"></i>
+			</nav>
+
+
+
+            		 <!-- Toggle Menu -->
+		 <script>
+			var navLinks = document.getElementById("navLinks");
+	
+			function showMenu(){
+				navLinks.style.right = "0";
+			}
+	
+			function hideMenu(){
+				navLinks.style.right = "-200px";
+			}
+	
+		</script>
 
     
 
-<div class="header">
+<div class="other-header">
 
 
     <!--Content before waves-->
@@ -103,7 +140,7 @@
                 <div class="description">
                     <h2>Designed & Brought to YOU, by US</h2>
                     <br>
-                    <p>Our class (EXP-0007 Design Thinking For Social Good) has worked all semester to understand the concepts of design thinking and how it can be applied to mental health concerns on our campus.</p> 
+                    <p>Our class (EXP-0007 Design Thinking For Social Change) has worked all semester to understand the concepts of design thinking and how it can be applied to mental health concerns on our campus.</p> 
                     <br>
                     <p>Join us to take a break from your finals studying to be immersed into breathing exercises and reflection of things that make you happy.                  
                     Also check out our formal report of mental health concerns at Tufts.</p>
@@ -149,7 +186,7 @@
     <!--Content ends-->
 
 		
-		<footer>
+		<!-- <footer>
 		
 				<div class="fbuttons" style="padding-left: 220px; padding-right: 280px"> 
 					<h2> Mental Health @ Tufts </h2> <br>
@@ -176,7 +213,40 @@
 				</div>
 		
 				
-		</footer>
+		</footer> -->
+
+
+    
+		<div class = "flex-wrapper">
+			<div class="content"></div>
+		
+					<footer class="footer">
+						<div class="row">
+		
+							<div class="footer-icons">
+								<h2 >Mental Health @ Tufts!</h2>
+								<p>We’re here for you :)</p>
+							</div>
+		
+							<div class="footer-col">
+								<ul>
+									<li class="home"> <a href="index.html" >Home </a></li>
+									<li class="report"><a href="report/report.html">Report </a></li>
+								<li class="installation"> <a href="installation/installation.html">Art Installation</a></li>
+								</ul>
+							</div>
+							<div class="footer-col">
+								<ul>
+									<li class="students"> <a href="resources/resources.html"> For Students</a></li>
+									<li class="professors"> <a href="resources/resources.html"> For Professors</a> </li>
+									<li class="professors"> <a href="resources/resources.html"> Events</a> </li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+		
+		</div>
+
 
 	</body>
 	

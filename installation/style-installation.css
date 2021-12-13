@@ -12,54 +12,79 @@
     
 }
 
-
 nav {
-	width: 88%;
-	display: flex;
-	padding: 2% 6%;
-	justify-content: space-between;
-	align-items: center;
-	background: #FFF9F2;
-	position: fixed;
     overflow-x: hidden;
-	
-}
-
-nav .navbuttons {
-	
-	flex: 1;
-	text-align: right;
-	position: relative;
-  	display: inline-block;
-}
-
-.navbuttons .contact {
-	border: solid 3px #9DA5FF;
-	border-radius: 5px;
-	background: #C1C6FF;
-}
-
-
-
-
-.contact:hover {
-	background: #9DA5FF;
-	border-radius: 5px;
-	
-}
-
-nav ul li {
-	list-style: none;
-	display: inline-block;
-	padding: 8px 12px;
-	position: relative;
-	
-}
-
-nav ul li a{
-	text-decoration: none;
-	color: #000;
-}
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff9f2;
+  }
+  
+  .nav-links {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  
+  .nav-links ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }
+  
+  nav .fas {
+    display: none;
+  }
+  
+  .contact {
+    border: solid 3px #9da5ff;
+    border-radius: 5px;
+    background: #c1c6ff;
+  }
+  
+  .contact:hover {
+    background: #9da5ff;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 800px) {
+    .nav-links ul li {
+      display: block;
+    }
+  
+    .nav-links {
+      position: absolute;
+      background: #fff9f2;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+    }
+  
+    nav .fas {
+      display: block;
+      color: #000;
+      margin: 16px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .nav-links ul {
+      padding: 30px;
+    }
+  }
 
 body {
     margin: 0px;
@@ -68,7 +93,7 @@ body {
     
 }
 
-.header {
+.other-header {
   position: relative;
   overflow: hidden;
   text-align:center;
@@ -168,15 +193,11 @@ overflow: hidden;
     color: black;
     flex-wrap: wrap;
     padding: 5%;
-    
- 
-
 }
 
 .location {
     display: flex;
     z-index: 10;
-    padding-bottom: 10px;
     font-size: 2.9vh;
 
 }
@@ -192,9 +213,7 @@ overflow: hidden;
     padding-bottom: 50px;
     text-align: left;
     line-height: 1;
-    font-size: 4.5vh;
-
-    
+    font-size: 4.5vh; 
 
 }
 
