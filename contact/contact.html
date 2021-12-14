@@ -1,70 +1,137 @@
 <!doctype html>
 <html>
+
+	
 	
 	<head>
 		<meta charset="UTF-8">
 		<title>EXP 7: Mental Health</title>
+
+
 		<link rel="stylesheet" href="style-contact.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 		
 		<!-- Outfit Font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;800&display=swap" rel="stylesheet">
-	</head>
-	
-	
-	<body>
-		
-		<header>
-			<nav>
-				<!-- logo -->
-				<a href="../index.html" style="font-weight: 800; color: #000; text-decoration: none"> Mental Health @ Tufts <!--<img>--> </a>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;800&display=swap" rel="stylesheet">
+        
 
-				<!-- navigation bar buttons-->
-				<div class="navbuttons"> 
+        <script src="https://kit.fontawesome.com/49fe80168b.js" crossorigin="anonymous"></script>
+        
+
+        
+	</head>
+
+    
+
+
+    
+    
+	
+	<body>		
+		<!-- <header>
+			<nav>
+	 -->
+				<!-- <a href="../index.html" style="font-weight: 800; color: #000; text-decoration: none"> Mental Health @ Tufts <img> </a> -->
+
+	
+				<!-- <div class="navbuttons"> 
 					<ul>
 						<li class="home"><a href="../index.html">Home </a></li>
 						<li class="report"><a href="../report/report.html">Report </a></li>
-						<li class="installation"> <a href="../installation/installation.html">Art Installation</a></li>
+						<li class="installation" style="font-weight: 800"> <a href="installation.html">Art Installation</a></li>
 						<li class="resources" style="padding-right: 22px"> <a href="../resources/resources.html"> Resources</a> </li>
-						<li class="contact"> <a href="contact.html" > Contact Us</a></li>
+						<li class="contact"> <a href="../contact/contact.html" > Contact Us</a></li>
 					</ul>
-				</div>
-				
+				</div> -->
+<!-- 				
 			</nav>		
-		</header>
-		
-		
-		<footer>
-		
-				<div class="fbuttons" style="padding-left: 220px; padding-right: 280px"> 
-					<h2> Mental Health @ Tufts </h2> <br>
-			 		<h3 style="font-weight: 200"> We're here for you :)</h3> 
-			
-				</div>
-			
-				<div class="fbuttons"> 
+		</header> -->
 
+
+		
+		<section class="header">
+			<!-- navigation bar buttons-->
+			<nav>
+				<a href="index.html" style="font-weight: 800; color: #000; text-decoration: none"> Mental Health @ Tufts <!--<img>--> </a>
+				<div class="nav-links" id="navLinks">
+					<i class="fas fa-times" onclick="hideMenu()"></i>
 					<ul>
-						<li class="home"> <a href="../index.html" >Home </a></li>
-						<li class="report"><a href="../report/report.html">Report </a></li>
-						<li class="installation"> <a href="../installation/installation.html">Art Installation</a></li>
+                    <li class="home"><a href="../index.html">Home </a></li>
+					<li class="report"><a href="../report/report.html">Report </a></li>
+					<li class="installation"> <a href="../installation/installation.html">Art Installation</a></li>
+					<li class="resources" style="padding-right: 22px"> <a href="../resources/resources.html"> Resources</a> </li>
+					<li class="contact"style="font-weight: 800"><a href="contact/contact.html" > Contact Us</a></li>
 					</ul>
 				</div>
+				<i class="fas fa-bars" onclick="showMenu()"></i>
+			</nav>
 
-				<div class="fbuttons"> 
-					<ul>
-						<li class="students"> <a href="../resources/resources.html"> For Students</a></li>
-						<li class="professors"> <a href="../resources/resources.html"> For Professors</a> </li>
-						<li class="professors"> <a href="../resources/resources.html"> Events</a> </li>
-
-					</ul>
-				</div>
+		</section>
 		
-				
-		</footer>
+		 <!-- Toggle Menu -->
+		 <script>
+			var navLinks = document.getElementById("navLinks");
+	
+			function showMenu(){
+				navLinks.style.right = "0";
+			}
+	
+			function hideMenu(){
+				navLinks.style.right = "-200px";
+			}
+	
+		</script>
+    
+	
 
-	</body>
+ 
+<div class="form">
+    <div id="ff-compose"></div>
+    <script async defer src="https://formfacade.com/include/100614030539596948449/form/1FAIpQLSenb7LVbLbzDKY-wmW8JuWDXk3nQmxrPf7Tsb9TLNckcZW2RA/classic.js?div=ff-compose"></script>
+</div>
+
+
+<div class = "flex-wrapper">
+    <div class="content"></div>
+
+            <footer class="footer">
+                <div class="row">
+
+                    <div class="footer-icons">
+                        <h2 >Mental Health @ Tufts!</h2>
+                        <p>We’re here for you :)</p>
+                    </div>
+
+                    <div class="footer-col">
+                        <ul>
+                            <li class="home"> <a href="index.html" >Home </a></li>
+                            <li class="report"><a href="report/report.html">Report </a></li>
+                        <li class="installation"> <a href="installation/installation.html">Art Installation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <ul>
+                            <li class="students"> <a href="resources/resources.html"> For Students</a></li>
+                            <li class="professors"> <a href="resources/resources.html"> For Professors</a> </li>
+                            <li class="professors"> <a href="resources/resources.html"> Events</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+</div>
+
+
+
+
+    </body>
 	
 	
 </html>
