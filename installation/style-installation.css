@@ -188,7 +188,7 @@ overflow: hidden;
 
 .time-location-container {
     text-align: left;
-    margin-top: 140px;
+    margin-top: 6%;
     z-index: 10;
     color: black;
     flex-wrap: wrap;
@@ -213,7 +213,7 @@ overflow: hidden;
     padding-bottom: 50px;
     text-align: left;
     line-height: 1;
-    font-size: 4.5vh; 
+    font-size: 5.3vh; 
 
 }
 
