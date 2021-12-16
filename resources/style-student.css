@@ -177,7 +177,7 @@ nav ul li a{
 /* Center content */
 .bigboybox {
     display: flex;
-    border: solid;
+    
     justify-content: center;
     align-items: flex-start;
     margin: 30px;
@@ -198,7 +198,7 @@ nav ul li a{
     width: 30%;
     padding: 30px;  
 } */
-#actual-resources {
+.resources-form {
     width: 40%;
     padding: 30px;
     margin: 30px;
@@ -208,18 +208,73 @@ nav ul li a{
 }
 
 .box-resources {
-  border: solid 2px red;
+  border: solid 2px white;
   display: flex;
 }
 
 
 .boxyboxy {
-  border: solid blue;
+  border: solid white;
 }
 
 
 
+/* Links */
+.inside-box {
+  color: black;
+}
 
+
+#actual-resources1{
+  background: #C1C6FF;
+  border: solid 5px #9DA5FF;
+}
+
+#actual-resources2{
+  background: #C1C6FF;
+  border: solid 5px #9DA5FF;
+}
+
+#actual-resources3{
+  background: #C1C6FF;
+  border: solid 5px #9DA5FF;
+}
+
+#actual-resources4{
+  background: #fe6f7f;
+  border: solid 5px #ff5a6d;
+  color:black;
+}
+
+#actual-resources5{
+  background: #fe6f7f;
+  border: solid 5px #ff5a6d;
+  color:black;
+}
+
+#actual-resources6{
+  background: #fe6f7f;
+  border: solid 5px #ff5a6d;
+  color:black;
+}
+
+#actual-resources7{
+  background: #ffe88c;
+  border: solid 5px #fecd01;
+  color:black;
+}
+
+#actual-resources8{
+  background: #ffe88c;
+  border: solid 5px #fecd01;
+  color:black;
+}
+
+#actual-resources9{
+  background: #017C5C;
+  border: solid 5px #017C5C;
+  color:white;
+}
 
 /* 
    * css for the footer

@@ -12,6 +12,58 @@
 		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;800&display=swap" rel="stylesheet">
 
         <script src="https://kit.fontawesome.com/49fe80168b.js" crossorigin="anonymous"></script>
+
+        
+        <style>
+            a {
+                color:black;
+            }
+
+            @media (max-width: 1000px) {
+                .box-resources {
+                    flex-direction: column;
+                    align-items: center;   
+                }
+
+                .resources-form {
+                    
+                    /* width: 65%; */
+                    width: calc(100% - 300px);
+                    font-size: 20px;
+                }
+            }
+
+            @media (max-width: 800px) {
+
+                    #hero-left, #hero-right {
+                        width: 30%;
+                    }
+
+                    h3 {
+                        width: 100%; 
+                    }
+
+                    .aboutUs,.art{
+                        padding: 60px 100px 30px;
+                    }
+
+                    .allResources, #ourReport {
+                        padding: 0px 100px 60px;
+                    }
+
+                    .row{
+                        flex-direction: column;
+                    }
+
+                    .footer-col {
+                        margin-top: 30px;
+                        float: left;
+                        width: 50%;
+                    }
+                    }
+
+            
+        </style>
 	</head>
 	
 	
@@ -23,7 +75,7 @@
 				<a href="../index.html" style="font-weight: 800; color: #000; text-decoration: none"> Mental Health @ Tufts <!--<img>--> </a>
 
 				<!-- navigation bar buttons-->
-				<div class="navbuttons"> 
+				<div class="navbuttons" id="navLinks"> 
 					<i class="fas fa-times" onclick="hideMenu()"></i>
 					<ul>
 						<li class="home"><a href="../index.html">Home </a></li>
@@ -57,7 +109,7 @@
                     <h2>Student Resources </h2>
                     <div class="box-1">
                     <p>Combing through pages of resources can be a bit cumbersome, so, we've created a way to acess all the mental 
-                        health resources <br>provided to Tufts students (plus some non-Tufts resources!).<br><br> <strong><i>Coming soon:</i> Select some keywords from our form below and 
+                        health resources provided to Tufts students (plus some non-Tufts resources!).<br><br> <strong><i>Coming soon:</i> Select some keywords from our form below and 
                         we’ll do our best to match you with the resources you’re most likely to need/use. </strong> </p> <br>
                     <p> *If you know of any resources that we didn't list here but should definitely include, please <a href="../contact/contact.html" style="color: #000">contact us</a>!</p>
                     </div>
@@ -130,88 +182,136 @@
 
                     <div class="boxyboxy">
 
-                    <div class="box-resources">
-                        <div class="resources-form" id="actual-resources">
+                    <div class="box-resources" id="box-resources1">
+                        <div class="resources-form" id="actual-resources1">
 
                             <div> 
-                                <h4> Title</h4>
-                                <p> Actual resource 1</p>
+                                <h3> <Strong>Tufts Counseling and Mental Health Services (CMHS) </Strong></h3>
+                                <ul>
+                                    <li>(617) 627 - 3360</li><br>
+                                    <li ><p><a class="inside-box" href="https://docs.google.com/document/d/1di_9j63afAcLSqZJL4Rd3FVnr6CC0EDEPlfZGcQWNho/edit">Script on How to Make an Appointment</p></a></li><br>
+                                    <li ><p><a class="inside-box" href="https://students.tufts.edu/health-and-wellness/counseling-and-mental-health/our-services/groups-and-workshops#Free%20Weekly%20and%20Biweekly%20CMHS%20Groups">Fall 2021 Virtual Groups and Workshops</a></p></li>
+                                </ul>
+                            
                             </div>
                             
                         </div>
 
-                        <div class="resources-form" id="actual-resources">
+                        <div class="resources-form" id="actual-resources2">
 
                             <div> 
-                                <h4> Title</h4>
-                                <p> Actual resource 2</p>
+                                <h3><strong>Additional Tufts Mental Health Resources</strong></h3>
+                                <ul> 
+                                    <br>
+                                    <li ><p><a class="inside-box" href="https://www.ears4peers.com/">Ears For Peers: (617) 627-3888 </p></a></li><br>
+                                    <li ><p><a class="inside-box" href="https://ears4peers.herokuapp.com/">Ears for Peers: Messaging Service</a></p></li><br>
+                                    <li><p> <a  class="inside-box" href="https://students.tufts.edu/health-and-wellness/counseling-and-mental-health/kognito">Kognito: Online Mental Health Education Program</a></p></li>
+                                </ul>
                             </div>
                             
                         </div>
 
-                        <div class="resources-form" id="actual-resources">
+                        <div class="resources-form" id="actual-resources3">
 
                             <div> 
-                                <h4> Title</h4>
-                                <p> Actual resource 3</p>
+                                <h3><strong>SMFA and Graduate Students</strong></h3>
+                                <ul>
+                                <br>
+                                    <li ><p><a class="inside-box" href="https://smfa.tufts.edu/student-experience/health-wellness">Counseling at the SMFA</p></a></li><br>
+                                    <li ><p><a class="inside-box" href="https://students.tufts.edu/health-and-wellness/counseling-and-mental-health/our-services/groups-and-workshops"> ReST & Renew: Tool for Uncertain Times for Gradute Students</p></a></li>
+                                </ul>
                             </div>
                             
                         </div>
                     </div>    
 
-                    <div class="box-resources">
-                        <div class="resources-form" id="actual-resources">
+                    <div class="box-resources" id="box-resources2">
+                        <div class="resources-form" id="actual-resources4">
 
                             <div> 
-                                <h4> Title</h4>
-                                <p>Actual resource 4</p>
+                                <h3><strong>BIPOC Resources</strong></h3>
+                                <ul>
+                                    <br>
+                                        <li class="inside-box"><p><a href="https://docs.google.com/document/d/1FqDNRzCbOfQcCJ0ILAZuFlpTxGVSRSVCkt9OH1t3RA8/edit">BIPOC Mental Health Wellness</p></a></li><br>
+                                        <li class="inside-box"><p><i>OASIS Student Group:</i> Contact candyce.burke_auguste@tufts.edu</p></li><br>
+                                        <li class="inside-box"><p><a href="https://www.detoxlocal.com/resources/aapi-addiction-mental-health/">Asian American Students Mental Health Resources</p></a></li>
+                                    </ul>
                             </div>
                             
                         </div>
 
-                        <div class="resources-form" id="actual-resources">
+                        <div class="resources-form" id="actual-resources5">
 
                             <div> 
-                                <h4> Title</h4>
-                                <p>Actual resource 5</p>
+                                <h3><strong>LGBTQ</strong></h3>
+                                <ul>
+                                    <br>
+                                        <li class="inside-box"><p><a href="https://docs.google.com/spreadsheets/d/1zrEkpd6vOEyXpqTZsDl2lhlbfCSPop2BIlMQxINlSac/edit#gid=705239455"> </p>Boston Area GSM Friendly Therapist List</a></li><br>
+                                        <li class="inside-box"><p><a href="https://go.oncehub.com/HopeFreeman?name=ADD_DYNAMIC_FIELD&email=ADD_DYNAMIC_FIELD&skip=1">Appointment with LGBT Center Director Hope Freeman</p></a></li><br>
+                                </ul>
                             </div>
                             
                         </div>
 
-                        <div class="resources-form" id="actual-resources">
+                        <div class="resources-form" id="actual-resources6">
 
                             <div> 
-                                <h4> Title</h4>
-                                <p>Actual resource 6</p>
+                                <h3><strong> FGLI </strong></h3>
+                                <ul>
+                                    <br>
+                                        <li class="inside-box"><p><i>Appointments with FIRST Center Directors: </i> <br><br> <a href="https://go.oncehub.com/JaredSmith"> Jared Smith</a> & Rosanna Inirio: Rosanna.Inirio@tufts.edu </p></li><br>
+                                        <li class="inside-box"><p><a href="https://firstgen.naspa.org/">Center for First Generation Student Success</p></a></li><br>
+                                </ul>
                             </div>
                             
                         </div>
                     </div>
 
-                    <div class="box-resources">
-                        <div class="resources-form" id="actual-resources">
+                    <div class="box-resources" id="box-resources3">
+                        <div class="resources-form" id="actual-resources7">
 
                             <div> 
-                                <h4> Title</h4>
-                                <p>Actual resource 7</p>
+                                <h3><strong>Anxiety & Stress</strong></h3>
+                                <ul>
+                                    <br>
+                                        <li class="inside-box"><p><a href="https://students.tufts.edu/health-and-wellness/counseling-and-mental-health/self-help/anxiety-and-stress">Part 1: Mindfullness with Erick Marks,LICSW</p></a></li><br>
+                                        <li class="inside-box"><p><a href="https://students.tufts.edu/health-and-wellness/counseling-and-mental-health/self-help/anxiety-and-stress">Part 2: Progressive Muscle Relaxation with Nandini Talwar</p></a></li><br>
+                                        <li class="inside-box"><p><a href="https://students.tufts.edu/sites/default/files/MindfulnessMeditationforAnxiety.mp3"> Mindfullness and Meditation for Anxiety</p></a></li><br>
+                                        <li class="inside-box"><p><a href="https://students.tufts.edu/sites/default/files/Mountain.mp3">Body Scan</p></a></li><br>
+                                        <li class="inside-box"><p><a href="https://www.youtube.com/watch?v=c1Ndym-IsQg">Headspace | Mini Meditation | Let Go of Stress</p></a></li>
+
+
+                                </ul>
                             </div>
                             
                         </div>
 
-                        <div class="resources-form" id="actual-resources">
+                        <div class="resources-form" id="actual-resources8">
 
                             <div> 
-                                <h4> Title</h4>
-                                <p>Actual resource 8</p>
+                                <h3><strong>Screening Tools</strong></h3>
+                                <ul>
+                                    <br>
+                                        
+                                        <li class="inside-box"><p><a href="https://screener.ulifeline.org/"> ULIFE Self Evaluator</a><br>*Screens for thirteen of the most common mental health conditions that college students face.</p></li><br>
+                                        <li class="inside-box"><p><a href="https://screening.mhanational.org/screening-tools/"> Mental Health America: Mental Health Test</a><br> *Provides a collection of online, free, confidential, anonymous, and validated screening tools</p></li><br>
+                                        
+                                </ul>
                             </div>
                             
                         </div>
 
-                        <div class="resources-form" id="actual-resources">
+                        <div class="resources-form" id="actual-resources9">
 
                             <div> 
-                                <h4> Title</h4>
-                                <p>Actual resource 9</p>
+                                <h3><strong>Additional Self-Help Resources</strong></h3>
+                                <ul>
+                                    <br>
+                                        <li class="inside-box"><p style="color: white"><a style="color: white" href="https://www.mentalhealthishealth.us/">Half Of Us</a><br>*Features a library of free-for-use videos including PSAs, personal experiences with mental health, and substance use.</p></li><br>
+                                        <li class="inside-box"><p style="color: white"><a style="color: white" href="https://www.jedfoundation.org/set-to-go/">Set To Go</a><br>*Resources for transitioning from HS to College</p></li><br>
+                                        <li class="inside-box"><p style="color: white"><a style="color: white" href="https://goaskalice.columbia.edu/">Go Ask Alice</a><br>*Columbia University's award-winning health Q&A online resource</p></li>
+                                        
+                                </ul>
                             </div>
                             
                         </div>
