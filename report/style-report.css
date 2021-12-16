@@ -54,6 +54,32 @@ nav ul li a{
 }
 
 
+/* Top Content */
+.student-1 {
+	
+	text-align:left;
+    background: #FFF9F2;
+    padding: 35px;
+}
+
+.student-1 .box-1 {
+   
+    background: #fff0e0;
+    border: solid 5px #fff0e0;
+    border-radius: 10px;
+    width: 70%;
+    padding: 30px;
+    margin: auto;
+    
+}
+
+.student-1 h2 {
+    font-size: 35px;
+    color: #017C5C;
+
+    padding-bottom: 15px;
+    
+}
 
 
 footer {
