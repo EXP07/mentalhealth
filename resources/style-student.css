@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Outfit', sans-serif;
+}
+
+.header {
+    position: relative;
+  }
+
+/* Nav bar */
+nav {
+	/* width: 88%; */
+    overflow-x: hidden;
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+	background: #FFF9F2;
+
+
+	
+}
+
+nav .navbuttons {
+	
+	flex: 1;
+	text-align: right;
+	/* position: relative;
+  	display: inline-block; */
+}
+
+.navbuttons ul li {
+    list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+
+}
+
+.navbuttons ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbuttons ul li:hover::after {
+    width: 100%;
+  }
+
+
+  nav .fas {
+    display: none;
+  }
+  
+
+.navbuttons .contact {
+	border: solid 3px #9DA5FF;
+	border-radius: 5px;
+	background: #C1C6FF;
+}
+
+.contact:hover {
+	background: #9DA5FF;
+	border-radius: 5px;
+	
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+	
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #000;
+}
+
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content {
+	text-align: left;
+	display: none;
+	position: absolute;
+	background-color: #FFF9F2;
+	min-width: 80px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  
+  .dropdown-content a {
+	color: #000000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+
+  }
+  
+  .dropdown-content a:hover {
+	  background-color: #fff0e0;
+	  border-radius: 5px;
+  }
+
+  .dropdown:hover .dropdown-content {
+	display: block;
+	border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbuttons ul li {
+      display: block;
+    }
+  
+    .navbuttons {
+      position: absolute;
+      background: #fff9f2;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+    }
+  
+    nav .fas {
+      display: block;
+      color: #000;
+      margin: 16px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .navbuttons ul {
+      padding: 30px;
+    }
+  }
+
+
+/* Top Content */
+.student-1 {
+	
+	text-align:left;
+    background: #FFF9F2;
+    padding: 35px;
+}
+
+.student-1 .box-1 {
+   
+    background: #fff0e0;
+    border: solid 5px #fff0e0;
+    border-radius: 10px;
+    width: 70%;
+    padding: 30px;
+    margin: auto;
+    
+}
+
+.student-1 h2 {
+    font-size: 35px;
+    color: #017C5C;
+
+    padding-bottom: 15px;
+    
+}
+
+
+
+/* Center content */
+.bigboybox {
+    display: flex;
+    border: solid;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px;
+}
+
+
+.student-2 .resources-form {
+    border: solid 2px;
+
+    margin-left: 15px;
+    display: inline-block; 
+    
+  
+    
+}
+/* 
+#form {
+    width: 30%;
+    padding: 30px;  
+} */
+#actual-resources {
+    width: 40%;
+    padding: 30px;
+    margin: 30px;
+}
+.student-2 .resources-form ul {
+    list-style-type: none;
+}
+
+.box-resources {
+  border: solid 2px red;
+  display: flex;
+}
+
+
+.boxyboxy {
+  border: solid blue;
+}
+
+
+
+
+
+/* 
+   * css for the footer
+   */
+   .content {
+    flex: 1 0 auto;
+  }
+  
+  .flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .footer-icons {
+    margin-right: auto;
+  }
+  .footer-col ul {
+    list-style: none;
+  }
+  
+  .footer {
+    box-sizing: border-box;
+    padding: 5%;
+    margin-top: auto;
+    min-width: 100%;
+    max-width: 100%;
+    padding-top: 5%;
+    background-color: #fff9f2;
+  }
+  
+  .footer-col {
+    width: 15%;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+  
+  .footer-icons h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  .footer-icons h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 300;
+    position: relative;
+  }
+  
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a {
+    font-size: 18px;
+  
+    color: #333;
+    text-decoration: none;
+    font-weight: 300;
+  
+    display: block;
+    transition: all 0.3s ease;
+  }
+  

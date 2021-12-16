@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>EXP 7: Resources</title>
+		<link rel="stylesheet" href="style-student.css">
+		
+		<!-- Outfit Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;800&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/49fe80168b.js" crossorigin="anonymous"></script>
+	</head>
+	
+	
+	<body>
+		
+		<header>
+			<nav>
+				<!-- logo -->
+				<a href="../index.html" style="font-weight: 800; color: #000; text-decoration: none"> Mental Health @ Tufts <!--<img>--> </a>
+
+				<!-- navigation bar buttons-->
+				<div class="navbuttons" id="navLinks"> 
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li class="home"><a href="../index.html">Home </a></li>
+						<li class="report"><a href="../report/report.html">Report </a></li>
+						<li class="installation"> <a href="../installation/installation.html">Art Installation</a></li>
+
+						<div class="dropdown"> 
+							<li class="resources" style="font-weight: 800; padding-right: 22px"> Resources</a> </li>
+							<div class="dropdown-content">
+								<a href="../resources/student.html" class="student-page"><strong>Student</strong> Resources</a>
+								<a href="../resources/professor.html" class="student-page"><strong>Professor</strong> Resources</a>
+							</div>
+
+						</div>
+                        
+						<li class="contact"> <a href="../contact/contact.html" > Contact Us</a></li>
+					</ul>
+				</div>
+				<i class="fas fa-bars" onclick="showMenu()"></i>
+			</nav>		
+		</header>
+
+        <script>
+			var navLinks = document.getElementById("navLinks");
+	
+			function showMenu(){
+				navLinks.style.right = "0";
+			}
+	
+			function hideMenu(){
+				navLinks.style.right = "-200px";
+			}
+	
+		</script>
+
+		<article>
+
+            
+                <section class="student-1">
+                    <h2>Student Resources </h2>
+                    <div class="box-1">
+                    <p>Combing through pages of resources can be a bit cumbersome, so, we've created a way to acess all the mental 
+                        health resources <br>provided to Tufts students (plus some non-Tufts resources!).<br><br> <strong><i>Coming soon:</i> Select some keywords from our form below and 
+                        we’ll do our best to match you with the resources you’re most likely to need/use. </strong> </p> <br>
+                    <p> *If you know of any resources that we didn't list here but should definitely include, please <a href="../contact/contact.html" style="color: #000">contact us</a>!</p>
+                    </div>
+                </section> 
+
+            <div class="bigboybox">
+                <section class="student-2">
+                    
+                    <!-- <div class="resources-form" id="form">
+                        <form>
+                            <ul>
+                                <div>
+                                    <li>
+                                        <input type="checkbox" checked> All Resources 
+                                    </li>
+                                    <li>
+                                        <input type="checkbox"> General Mental Health Resources @ Tufts
+                                    </li>
+                                    <li>
+                                        <input type="checkbox"> Non-Tufts Mental Health Resources
+                                        
+                                    </li>
+                                </div>
+
+                                <div>
+                                    <li>
+                                        <input type="checkbox"> BIPOC Resources
+                                        
+                                    </li>
+                                    <li>
+                                        <input type="checkbox"> LGBTQ Resources
+                                    
+                                    </li>
+                                </div>
+
+                                <div>
+                                    <li>
+                                        <input type="checkbox"> Screening Tools
+                                        
+                                    </li>
+                                    <li>
+                                        <input type="checkbox"> ADD/ADHD   
+                                    </li>
+                                    <li>
+                                        <input type="checkbox"> Anxiety & Stress
+                                    </li>
+                                    <li>
+                                        <input type="checkbox"> Psychosis and Unusual Experiences
+                                    </li>
+                                </div>
+
+                                <li>
+                                    <button type="button">Filter</button>
+                                </li>
+
+                            </ul>
+                            
+                        </form>
+                    </div> -->
+
+                    
+                    <!-- <div class="boxyboxy">
+                        <form>
+                            <ul>
+                                <li>List 1</li>
+                            </ul>
+                        </form>
+
+                    </div> -->
+
+                    <div class="boxyboxy">
+
+                    <div class="box-resources">
+                        <div class="resources-form" id="actual-resources">
+
+                            <div> 
+                                <h4> Title</h4>
+                                <p> Actual resource 1</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="resources-form" id="actual-resources">
+
+                            <div> 
+                                <h4> Title</h4>
+                                <p> Actual resource 2</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="resources-form" id="actual-resources">
+
+                            <div> 
+                                <h4> Title</h4>
+                                <p> Actual resource 3</p>
+                            </div>
+                            
+                        </div>
+                    </div>    
+
+                    <div class="box-resources">
+                        <div class="resources-form" id="actual-resources">
+
+                            <div> 
+                                <h4> Title</h4>
+                                <p>Actual resource 4</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="resources-form" id="actual-resources">
+
+                            <div> 
+                                <h4> Title</h4>
+                                <p>Actual resource 5</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="resources-form" id="actual-resources">
+
+                            <div> 
+                                <h4> Title</h4>
+                                <p>Actual resource 6</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="box-resources">
+                        <div class="resources-form" id="actual-resources">
+
+                            <div> 
+                                <h4> Title</h4>
+                                <p>Actual resource 7</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="resources-form" id="actual-resources">
+
+                            <div> 
+                                <h4> Title</h4>
+                                <p>Actual resource 8</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="resources-form" id="actual-resources">
+
+                            <div> 
+                                <h4> Title</h4>
+                                <p>Actual resource 9</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                </section>
+
+
+
+            </div>
+
+		</article>
+		
+		
+
+
+
+
+		<div class = "flex-wrapper">
+			<div class="content"></div>
+		
+					<footer class="footer">
+						<div class="row">
+		
+							<div class="footer-icons">
+								<h2 >Mental Health @ Tufts!</h2>
+								<p>We’re here for you :)</p>
+							</div>
+		
+							<div class="footer-col">
+								<ul>
+									<li class="home"> <a href="index.html" >Home </a></li>
+									<li class="report"><a href="report/report.html">Report </a></li>
+								<li class="installation"> <a href="installation/installation.html">Art Installation</a></li>
+								</ul>
+							</div>
+							<div class="footer-col">
+								<ul>
+									<li class="students"> <a href="resources/resources.html"> For Students</a></li>
+									<li class="professors"> <a href="resources/resources.html"> For Professors</a> </li>
+									<li class="professors"> <a href="resources/resources.html"> Events</a> </li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+		</div>
+
+	</body>
+	
+	
+</html>
+

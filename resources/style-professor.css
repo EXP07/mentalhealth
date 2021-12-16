@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Outfit', sans-serif;
+}
+
+
+/* Nav bar */
+nav {
+	width: 88%;
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+	background: #FFF9F2;
+	position: relative;
+
+	
+}
+
+nav .navbuttons {
+	
+	flex: 1;
+	text-align: right;
+	position: relative;
+  	display: inline-block;
+}
+
+.navbuttons .contact {
+	border: solid 3px #9DA5FF;
+	border-radius: 5px;
+	background: #C1C6FF;
+}
+
+.contact:hover {
+	background: #9DA5FF;
+	border-radius: 5px;
+	
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+	
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #000;
+}
+
+
+.student-1 {
+	margin: auto;
+	text-align:left;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content {
+	text-align: left;
+	display: none;
+	position: absolute;
+	background-color: #FFF9F2;
+	min-width: 80px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  
+  .dropdown-content a {
+	color: #000000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+
+  }
+  
+  .dropdown-content a:hover {
+	  background-color: #f0ebe5;
+	  border-radius: 5px;
+  }
+
+  .dropdown:hover .dropdown-content {
+	display: block;
+	border-radius: 10px;
+}
+
+
+
+/* Footer */
+
+footer {
+	
+
+	position:fixed;
+	bottom:0px;
+	height:130px;
+	width:100%;
+	background:#FFF9F2;
+	color:#000;
+	margin: 0px;
+	padding-top: 50px;
+	padding-left: 80px;
+	
+}
+
+
+footer .fbuttons {
+	
+	float:left;
+	text-align: left;
+	position: relative;
+	padding-right: 80px;
+	color: #000;
+	
+  	
+}
+
+footer ul {
+	display: inline-block;
+	list-style: none;	
+	position: relative;
+}
+
+footer ul li {
+	padding: 5px;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: #000;
+}
