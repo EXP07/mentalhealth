@@ -228,52 +228,61 @@ nav ul li a{
 #actual-resources1{
   background: #C1C6FF;
   border: solid 5px #9DA5FF;
+  border-radius: 10px;
 }
 
 #actual-resources2{
   background: #C1C6FF;
   border: solid 5px #9DA5FF;
+  border-radius: 10px;
 }
 
 #actual-resources3{
   background: #C1C6FF;
   border: solid 5px #9DA5FF;
+  border-radius: 10px;
 }
 
 #actual-resources4{
   background: #fe6f7f;
   border: solid 5px #ff5a6d;
   color:black;
+  border-radius: 10px;
 }
 
 #actual-resources5{
   background: #fe6f7f;
   border: solid 5px #ff5a6d;
   color:black;
+  border-radius: 10px;
 }
 
 #actual-resources6{
   background: #fe6f7f;
   border: solid 5px #ff5a6d;
   color:black;
+  border-radius: 10px;
 }
 
 #actual-resources7{
   background: #ffe88c;
   border: solid 5px #fecd01;
   color:black;
+  border-radius: 10px;
 }
 
 #actual-resources8{
   background: #ffe88c;
   border: solid 5px #fecd01;
   color:black;
+  border-radius: 10px;
 }
 
 #actual-resources9{
   background: #017C5C;
   border: solid 5px #017C5C;
   color:white;
+  border-radius: 10px;
 }
 
 /* 
